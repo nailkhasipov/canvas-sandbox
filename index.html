@@ -4,32 +4,17 @@
     <meta charset="utf-8">
     <title>Canvas Game Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-      *{ position: fixed; }
-      body { background: #eee; }
-      canvas {
-        width: 100vmin;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%)translateY(-50%);
-        background: #fff;
-        image-rendering: optimizeSpeed;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: -o-crisp-edges;
-        image-rendering: pixelated;
-        -ms-interpolation-mode: nearest-neighbor;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
   </head>
   <body>
+    <h1>Test</h1>
     <canvas id="gameCanvas" width=128 height=128></canvas>
     <script>
       var canvas = document.getElementById("gameCanvas");
       var ctx = canvas.getContext("2d");
 
-      ctx.font = "9px Arial";
-      ctx.fillText("Canvas Game Framework",10,50);
+      ctx.font = '20px "04b03"';
+      ctx.fillText("Test",10,50);
     </script>
   </body>
 </html>
