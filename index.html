@@ -13,13 +13,23 @@
         left: 50%;
         transform: translateX(-50%)translateY(-50%);
         background: #fff;
+        image-rendering: optimizeSpeed;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: -o-crisp-edges;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
       }
     </style>
   </head>
   <body>
     <canvas id="gameCanvas" width=128 height=128></canvas>
     <script>
-      // Game code here
+      var canvas = document.getElementById("gameCanvas");
+      var ctx = canvas.getContext("2d");
+
+      ctx.font = "9px Arial";
+      ctx.fillText("Canvas Game Framework",10,50);
     </script>
   </body>
 </html>
