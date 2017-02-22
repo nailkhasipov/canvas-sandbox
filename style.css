@@ -1,20 +1,9 @@
-@font-face {
-  font-family: "04b03";
-
-  src: url("./fonts/04b03.woff") format("woff"),
-    url("./fonts/04b03.woff2") format("woff2");
-}
-
 *{
   position: fixed;
 }
 
 body {
   background: #eee;
-}
-
-h1 {
-  font-family: '04b03';
 }
 
 canvas {

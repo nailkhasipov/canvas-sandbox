@@ -4,17 +4,13 @@
     <meta charset="utf-8">
     <title>Canvas Game Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Test</h1>
+    <div style="display: none;">
+      <img id="source" src="font/04b03.png">
+    </div>
     <canvas id="gameCanvas" width=128 height=128></canvas>
-    <script>
-      var canvas = document.getElementById("gameCanvas");
-      var ctx = canvas.getContext("2d");
-
-      ctx.font = '20px "04b03"';
-      ctx.fillText("Test",10,50);
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
