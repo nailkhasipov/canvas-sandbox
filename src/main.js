@@ -5,17 +5,17 @@ var groundY = 40;
 var gravity = 0.2;
 var speed = 2;
 
-player = { x: 10, y: groundY, jumping: false, velY: 0, img: 'player.png' }
+player = { x: 10, y: groundY, jumping: false, velY: 0, img: '/assets/player.png' }
 var playerImage = new Image();
 playerImage.src = player.img;
 
-fetch('font/04b03.json').then(function(response) { 
+fetch('/assets/font/04b03.json').then(function(response) { 
   return response.json();
 }).then(function(data) {
   var font = data.font;
 
   var img = new Image();
-  img.src = 'font/04b03.png';
+  img.src = '/assets/font/04b03.png';
 
   var str = "Hello, World!";
 
